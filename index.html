@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud CI/CD Pipeline Demo</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f1f5f9;
+            color: #1e293b;
+        }
+
+        header {
+            background: #172554;
+            color: white;
+            text-align: center;
+            padding: 30px 15px;
+        }
+
+        header h1 {
+            margin: 0 0 10px;
+        }
+
+        main {
+            max-width: 850px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 28px;
+            border-radius: 14px;
+            box-shadow: 0 5px 20px #00000010;
+            margin-bottom: 20px;
+        }
+
+        .status {
+            color: #15803d;
+            font-weight: bold;
+        }
+
+        .stages {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 15px;
+        }
+
+        .stage {
+            background: #eff6ff;
+            padding: 20px 10px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: #64748b;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cloud CI/CD Pipeline</h1>
+        <p>Automated Build, Test and Deployment Using AWS</p>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>Project Dashboard</h2>
+            <p>Welcome to the Cloud CI/CD Demonstration Application.</p>
+            <p>Deployment Status: <span class="status">Application Ready</span></p>
+            <p>Application Version: <strong id="version">v1.0</strong></p>
+            <p>Cloud Provider: <strong>AWS</strong></p>
+        </section>
+
+        <section class="card">
+            <h2>CI/CD Pipeline Stages</h2>
+            <div class="stages">
+                <div class="stage">
+                    <h3>01</h3>
+                    <p>Source</p>
+                    <small>GitHub</small>
+                </div>
+                <div class="stage">
+                    <h3>02</h3>
+                    <p>Build & Test</p>
+                    <small>AWS CodeBuild</small>
+                </div>
+                <div class="stage">
+                    <h3>03</h3>
+                    <p>Pipeline</p>
+                    <small>AWS CodePipeline</small>
+                </div>
+                <div class="stage">
+                    <h3>04</h3>
+                    <p>Deployment</p>
+                    <small>Amazon S3</small>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        MCA Cloud Computing Project | CI/CD Pipeline on AWS
+    </footer>
+</body>
+</html>
